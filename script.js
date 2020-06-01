@@ -15,6 +15,10 @@ for (i = 0; i < numOfFood; i++) {
     $('.dictCont').eq(i).removeClass('shown');
     $('.dictCont').eq(i).addClass('hidden');
 }
+for (i = 0; i < numOfFood; i++) {
+    $('.quizCont').eq(i).removeClass('shown');
+    $('.quizCont').eq(i).addClass('hidden');
+}
 
 // ******************************************* OPEN PART *****************************
 
@@ -30,39 +34,59 @@ function openPart(part) {
         $('.dictCont').eq(0).removeClass('hidden');
         $('.dictCont').eq(0).addClass('shown');
     }
+
+    if (part == 3) {
+        $('.quizCont').eq(0).removeClass('hidden');
+        $('.quizCont').eq(0).addClass('shown');
+    }
     
 }
 
 // *************************************** NEXT PREV BUTTON **********************
 
-var foodN = 0;
+var slideN = 0;
+var listOfNp = ['.dictCont', '.quizCont']
 
-function next() {
+function next(num) {
     for (i = 0; i < numOfFood; i++) {
-        $('.dictCont').eq(i).removeClass('shown');
-        $('.dictCont').eq(i).addClass('hidden');
+        $(listOfNp[num]).eq(i).removeClass('shown');
+        $(listOfNp[num]).eq(i).addClass('hidden');
     }
 
-    foodN = foodN + 1;
-    if (foodN == numOfFood) {
-        foodN = 0;
+    if (num == 0) {
+        slideN = slideN + 1;
+        if (slideN == numOfFood) {
+            slideN = 0;
+        }
+    } 
+
+    if (num == 1) {
+        slideN = Math.floor(Math.random() * (numOfFood - 1))
     }
-    $('.dictCont').eq(foodN).removeClass('hidden');
-    $('.dictCont').eq(foodN).addClass('shown');
+
+    $(listOfNp[num]).eq(slideN).removeClass('hidden');
+    $(listOfNp[num]).eq(slideN).addClass('shown');
 }
 
-function prev() {
+function prev(num) {
     for (i = 0; i < numOfFood; i++) {
-        $('.dictCont').eq(i).removeClass('shown');
-        $('.dictCont').eq(i).addClass('hidden');
+        $(listOfNp[num]).eq(i).removeClass('shown');
+        $(listOfNp[num]).eq(i).addClass('hidden');
     }
 
-    foodN = foodN - 1;
-    if (foodN == -1) {
-        foodN = numOfFood - 1;
+    if (num == 0) {
+        slideN = slideN - 1;
+        if (slideN == numOfFood) {
+            slideN = 0;
+        }
+    } 
+
+    if (num == 1) {
+        slideN = Math.floor(Math.random() * (numOfFood - 1))
     }
-    $('.dictCont').eq(foodN).removeClass('hidden');
-    $('.dictCont').eq(foodN).addClass('shown');
+
+    $(listOfNp[num]).eq(slideN).removeClass('hidden');
+    $(listOfNp[num]).eq(slideN).addClass('shown');
 }
 
 // ******************************************************* PLAY AUDIO **************
