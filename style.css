@@ -1,0 +1,142 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+    font-size: 1.2em;
+    color: White;
+    background-color: #1c4676; 
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#1c4676, #5d6196, #6b7cb8, #8fa1db);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titleScreen {
+    align-items: center;
+}
+
+.titleScreen, .food, .foodDict, .foodQuiz {
+    width: 100%;
+}
+
+.titleImg {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 8%;
+}
+
+.mainMenuBtn {
+    width: 10%;
+    margin-left: 45%;
+    margin-right: auto;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
+.mainMenuBtn:hover, .menuBtn:hover {
+    cursor: pointer;
+    color: #d7dce6;
+    background-color: #5d6196;
+    border: 5px solid #5d6196;
+}
+
+.backBtn {
+    font-size: 1.5em !important;
+    margin-left: 1%;
+    margin-right: auto;
+    margin-top: 1%;
+    background-color: transparent;
+    color: #d7dce6;
+    border: 1px transparent;
+    outline: none;
+    position: fixed;
+    top: 1%;
+}
+
+.backBtn:hover {
+    cursor: pointer;
+}
+
+.menu {
+    margin-top: 12%;
+    margin-bottom: auto;
+    width: 100%;
+    align-items: center;
+}
+
+.menuBtn {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.menuBtn, .mainMenuBtn {
+    background-color: #d7dce6;
+    color: #5d6196;
+    border: 3px solid #5d6196;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.5em;
+}
+
+.w30 {
+    margin-top: 10%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: auto;
+}
+
+.images {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: auto;
+}
+
+.text {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em !important;
+}
+
+.prevBtn, .nextBtn {
+    font-size: 1.2em !important;
+    color: #d7dce6;
+    border: 0px;
+    background-color: transparent;
+    margin-top: 15%;
+    margin-bottom: auto;
+    position: fixed;
+}
+
+.prevBtn {
+    margin-left: 25%;
+    margin-right: auto;
+}
+
+.nextBtn {
+    margin-left: 68%;
+    margin-right: auto;
+}
+
+.task {
+    width: 100%;
+    text-align: center;
+    top: 3%;
+    position: fixed;
+    font-size: 1.5em;
+}
+
+.volumeBtn:hover, .nextBtn:hover, .prevBtn:hover {
+    color: #1c4676;
+}
+
+.hidden{
+	display: none;
+}
+
+.shown{
+	display: contents;
+}
