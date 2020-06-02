@@ -62,6 +62,10 @@ function next(num) {
 
     if (num == 1) {
         slideN = Math.floor(Math.random() * (numOfFood))
+        for (i = 0; i < numOfFood * 2; i++) {
+            $('.quizBtn').eq(i).css("background-color", "transparent");
+            $('.quizBtn').eq(i).css("color", "#d7dce6");
+        }
     }
 
     $(listOfNp[num]).eq(slideN).removeClass('hidden');
@@ -83,6 +87,10 @@ function prev(num) {
 
     if (num == 1) {
         slideN = Math.floor(Math.random() * (numOfFood))
+        for (i = 0; i < numOfFood * 2; i++) {
+            $('.quizBtn').eq(i).css("background-color", "transparent");
+            $('.quizBtn').eq(i).css("color", "#d7dce6");
+        }
     }
 
     $(listOfNp[num]).eq(slideN).removeClass('hidden');
@@ -98,4 +106,16 @@ function playAudio(num) {
     var audioElement = document.createElement('audio');
     audioElement.setAttribute('src', listOfAudio[num]);
     audioElement.play();
+}
+
+
+// ******************************************************* QUIZ ANSWER ************
+
+function quizAns(value, num) {
+    if ((value % 11) == 0) {
+        $('.quizBtn').eq(num).css("background-color", "#99ff66");
+        $('.quizBtn').eq(num).css("color", "#1c4676");
+    } else {
+        $('.quizBtn').eq(num).css("background-color", "#ff5050");
+    }
 }
