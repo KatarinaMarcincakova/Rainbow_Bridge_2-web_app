@@ -133,6 +133,21 @@ body, html {
     color: #1c4676;
 }
 
+.quizBtn {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 4%;
+    border: 2px solid #d7dce6;
+    border-radius: 5px;
+    color: #d7dce6;
+    background-color: transparent;
+}
+
+.quizBtn:hover {
+    cursor: pointer;
+    background-color: #1c4676;
+}
+
 .hidden{
 	display: none;
 }

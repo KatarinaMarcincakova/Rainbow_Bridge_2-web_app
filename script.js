@@ -61,7 +61,7 @@ function next(num) {
     } 
 
     if (num == 1) {
-        slideN = Math.floor(Math.random() * (numOfFood - 1))
+        slideN = Math.floor(Math.random() * (numOfFood))
     }
 
     $(listOfNp[num]).eq(slideN).removeClass('hidden');
@@ -82,7 +82,7 @@ function prev(num) {
     } 
 
     if (num == 1) {
-        slideN = Math.floor(Math.random() * (numOfFood - 1))
+        slideN = Math.floor(Math.random() * (numOfFood))
     }
 
     $(listOfNp[num]).eq(slideN).removeClass('hidden');
