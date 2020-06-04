@@ -47,16 +47,34 @@ body, html {
     font-size: 1.5em !important;
     margin-left: 1%;
     margin-right: auto;
-    margin-top: 1%;
     background-color: transparent;
     color: #d7dce6;
     border: 1px transparent;
     outline: none;
     position: fixed;
     top: 1%;
+    margin-top: 1%;
 }
 
 .backBtn:hover {
+    cursor: pointer;
+}
+
+.downloadBtn {
+    font-size: 1.5em !important;
+    margin-left: 1.5%;
+    margin-right: auto;
+    background-color: transparent;
+    color: #d7dce6;
+    border: 1px transparent;
+    outline: none;
+    position: fixed;
+    top: 1%;
+    margin-top: 4%;
+    z-index: 999;
+}
+
+.downloadBtn:hover {
     cursor: pointer;
 }
 
@@ -115,6 +133,30 @@ body, html {
 .prevBtn {
     margin-left: 25%;
     margin-right: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #1c4676;
+  color: #d7dce6;
+  margin-bottom: 0px !important;
+  bottom: 0px !important;
+  position: fixed;
+  width: 100%;
+}
+
+.copy {
+    text-decoration: none;
+    font-size: 0.8em !important;
+}
+
+.copy:hover {
+    cursor: pointer;
+}
+
+.copy:link {
+    text-decoration: none;
 }
 
 .nextBtn {
