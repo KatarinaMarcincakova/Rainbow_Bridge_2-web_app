@@ -2,6 +2,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
     height: 100%;
+    width: 100%;
     line-height: 1.8;
     font-size: 1.2em;
     color: White;
@@ -148,10 +149,145 @@ body, html {
     background-color: #1c4676;
 }
 
+.bgcol-1 {
+  background-color: #076579;
+}
+
 .hidden{
 	display: none;
 }
 
 .shown{
 	display: contents;
+}
+
+/* ****************************************** MEDIA ********************************** */
+@media screen and (max-width: 1155px) {
+
+    .mainMenuBtn {
+        width: 15%;
+        margin-left: 45%;
+        margin-right: auto;
+        margin-top: 8%;
+        font-weight: bold;
+        font-size: 1.2em !important;
+    }   
+
+    .menu {
+        margin-top: 20%;
+        margin-bottom: auto;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .menuBtn {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+
+    .mainMenuBtn {
+        width: 24%;
+        margin-left: 38%;
+        margin-right: auto;
+        margin-top: 8%;
+        font-weight: bold;
+        font-size: 1.2em !important;
+    } 
+
+    .titleImg {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: auto;
+        margin-top: 8%;
+    }  
+    
+    .menuBtn {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 725px) {
+
+    .mainMenuBtn {
+        width: 40%;
+        margin-left: 30%;
+        margin-right: auto;
+        margin-top: 8%;
+        font-weight: bold;
+        font-size: 1.2em !important;
+    } 
+
+    .titleImg {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+        margin-top: 8%;
+    }  
+    
+    .menuBtn {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 555px) {
+
+    .mainMenuBtn {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: auto;
+        margin-top: 10%;
+        font-weight: bold;
+        font-size: 1.2em !important;
+    } 
+
+    .titleImg {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: auto;
+        margin-top: 10%;
+    }  
+    
+    .menuBtn {
+        width: 60%;
+        margin-left: 20%;
+        margin-right: auto;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+
+    .mainMenuBtn {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: auto;
+        margin-top: 10%;
+        font-weight: bold;
+        font-size: 1.2em !important;
+    } 
+
+    .titleImg {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: 20%;
+    }  
+    
+    .menuBtn {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: 8%;
+    }
 }
